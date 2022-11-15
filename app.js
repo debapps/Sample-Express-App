@@ -1,4 +1,5 @@
 const express = require("express");
+const os = require("os");
 
 // Create the express app.
 const app = express();
@@ -20,5 +21,7 @@ app.get("/", (req, res) => {
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-  console.log(`Application is listening on port http://localhost:${port}`);
+  netInfo = os.networkInterfaces();
+  localIP = netInfo["Loopback Pseudo-Interface 1"][1]["address"];
+  console.log(`Application is listening on Address -  ${localIP}:${port}`);
 });
