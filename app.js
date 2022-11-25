@@ -20,7 +20,5 @@ app.get("/", (req, res) => {
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-  console.log(
-    `Application is running on the EC2 Elastic IP Address on Port - ${port}`
-  );
+  console.log(`Application is running on the Port - ${port}`);
 });
