@@ -6,12 +6,12 @@ files:
     file_exists_behavior: OVERWRITE
 
 hooks:
-  ApplicationStop:
-    - location: scripts/app_stop
-      timeout: 300
-  BeforeInstall:
-    - location: scripts/app_stop
-      timeout: 300
+  # ApplicationStop:
+  #   - location: scripts/app_stop
+  #     timeout: 300
+  # BeforeInstall:
+  #   - location: scripts/app_stop
+  #     timeout: 300
   Install:
     - location: scripts/install_dependencies
       timeout: 3600
