@@ -26,6 +26,8 @@ main {
     font-size: 16px;
     text-align: left;
     background: #14213d;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 main>h2:first-child {
@@ -37,6 +39,8 @@ main>h2:first-child {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
