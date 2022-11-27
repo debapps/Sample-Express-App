@@ -12,8 +12,8 @@ phases:
     build:
         commands:
             - echo "Build Plase ..."
-            - grep -Fq "Congratulations" views/index.html
-            - echo "Test for 'Congratulations' message passed ..."
+            - grep -Fq "Congratulation" views/index.html
+            - echo "Test for 'Congratulation' message passed ..."
     post_build:
         commands:
             - echo "Post Build Phase ..."
