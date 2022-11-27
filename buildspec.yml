@@ -1,0 +1,20 @@
+version: 0.2
+
+phases: 
+    install:
+        runtime-versions:
+            nodejs: latest
+        commands:
+            - echo "Install Phase ..."
+    pre_build:
+        commands: 
+            - echo "Pre Build Phase ..."
+    build:
+        commands:
+            - echo "Build Plase ..."
+            - grep -Fq "Congratulations" views/index.html
+            - echo "Test for 'Congratulations' message passed ..."
+    post_build:
+        commands:
+            - echo "Post Build Phase ..."
+            
