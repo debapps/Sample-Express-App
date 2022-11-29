@@ -5,6 +5,9 @@ files:
     destination: /home/ubuntu/express_app
 
 hooks:
+  ApplicationStop:
+    - location: scripts/stop_app.sh
+      timeout: 300
   BeforeInstall:
     - location: scripts/pre_install_app.sh
       timeout: 30
@@ -15,6 +18,4 @@ hooks:
   ApplicationStart:
     - location: scripts/start_app.sh
       timeout: 300
-  ApplicationStop:
-    - location: scripts/stop_app.sh
-      timeout: 300
+
