@@ -11,10 +11,6 @@ hooks:
   BeforeInstall:
     - location: scripts/pre_install_app.sh
       timeout: 30
-      runas: root
-  AfterInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
   ApplicationStart:
     - location: scripts/start_app.sh
       timeout: 300
