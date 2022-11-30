@@ -25,7 +25,8 @@ main {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     text-align: left;
-    background: #283618;
+    /* background: #283618; */
+    background: #231942;
     overflow: auto;
 }
 
